@@ -1,0 +1,23 @@
+$x('//li[@class="item product product-item"]/div/div/div/span/span/span/text()').map(x=>x.wholeText)  --- precios normales con atributo precio normal y especial
+$x('//li[@class="item product product-item"]/div/div/div/span/span/span/[@data]text()').map(x=>x.wholeText) --- precios sin SALE
++
+$x('//span[@data-price-type="finalPrice"]/span[@class="price"]/text()').map(x=>x.wholeText)     - precio final de todos
+
+$x('//li[@class="item product product-item"]/div/div/strong/a/text()').map(x=>x.wholeText)     -     nombres de productos pagina actual
+
+//html/body/div[1]/main/div/div[1]/div[3]/div[3]/div[2]/ul/li[@class="item"]/a/@href   -  paginas siguientes
+
+
+
+$x('//div/div/div/form/ul/li/a/span/text()').map(x=>x.wholeText)    -    categorías padre
+
+$x('//div/div/div/form/ul/li/ul/li/a/span/text()').map(x=>x.wholeText)    -   subcategorías
+
+
+$x('/html/body/div/div/div/div/div/div/div/div/div/h2/a/@href').map(x=>x.value)     -  links de los posts del diario
+$x('//div[contains(@class, "V")]/a[contains(@class, "kicker")]/@href').map(x=>x.value)
+
+$x('/html/body/div/div/div/div/div/div/div/div/div/h2/a/text()').map(x=>x.wholeText)   - titulos de las noticias
+
+$x('//div[@class="html-content"]/p[not(@class)]/text()').map(x=>x.wholeText)   -- cuerpo noticias
+

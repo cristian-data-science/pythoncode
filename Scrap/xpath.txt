@@ -1,0 +1,4 @@
+links = /html/body/div/div/div/div/div/div/div/div/div/h2/a/@href
+titulos = //div[@class="mb-auto"]/h2/a
+resumen = /html/body/div[1]/div/main/div[1]/div[3]/article/header/div[3]/p
+contenido = //div[@class="html-content"]/p[not(@class)]
